@@ -3,9 +3,10 @@ A simple Covid 19 tracker used to get the current details(total confirmed,total 
 
 Like this
 👇
+
 ![image](https://github.com/injusticescorpio/Kerala_Covid-19_Tracker/blob/master/Screenshot%20(158).png)
 
-<div style="color:grey">
+<pre style="color:grey">
 <h2> Inorder to run this: <h2>
   <ol>
     <li>First install Rasa:<b>pip install Rasa</b></li>
@@ -13,4 +14,4 @@ Like this
     <li>Inorder to run this firststart the action server: <b>rasa run actions</b></li>
     <li>run <b>rasa shell</b> command and enjoy :)</li>
     </ol>
-  </div>
+  </pre>
