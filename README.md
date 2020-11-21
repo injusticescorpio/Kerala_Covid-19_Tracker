@@ -3,4 +3,4 @@ A simple Covid 19 tracker used to get the current details(total confirmed,total 
 
 Like this
 
-![image](https://github.com/injusticescorpio/Kerala_Covid-19_Tracker/blob/master/Screenshot%20(157).png)
+![image](https://github.com/injusticescorpio/Kerala_Covid-19_Tracker/blob/master/Screenshot%20(158).png)
