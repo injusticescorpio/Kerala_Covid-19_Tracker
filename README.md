@@ -12,6 +12,6 @@ Like this
     <li>First install Rasa:<span style="color:grey">pip install Rasa</span></li>
     <li>Download the file</li>
     <li>Inorder to run this firststart the action server: <span style="color:grey">rasa run actions</span></li>
-    <li>Run <br><pre><span style="color:grey">rasa shell</span></pre> command and enjoy :)</li>
+    <li>Run<pre><span style="color:grey">rasa shell</span></pre> command and enjoy :)</li>
     </ol>
   </div>
