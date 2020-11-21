@@ -7,12 +7,10 @@ Like this
 
 <div style="color:grey">
 <h2> Inorder to run this: <h2>
-  <ul>
+  <ol>
     <li>First install Rasa:<b>pip install Rasa</b></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    
-    </ul>
-  
+    <li>Download the file</li>
+    <li>start the action server: <b>rasa run actions</b></li>
+    <li>run <b>rasa shell</b> command</li>
+    </ol>
   </div>
