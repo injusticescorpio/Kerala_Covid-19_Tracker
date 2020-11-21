@@ -9,9 +9,12 @@ Like this
 <div>
 <h2> Inorder to run this: </h2>
   <ol>
-    <li>First install Rasa:<span style="color:grey">pip install Rasa</span></li>
+    <li>First install Rasa</li>
+    <pre><span style="color:grey">pip install Rasa</span></pre>
     <li>Download the file</li>
-    <li>Inorder to run this firststart the action server: <span style="color:grey">rasa run actions</span></li>
-    <li>Run<pre><span style="color:grey">rasa shell</span></pre> command and enjoy :)</li>
+    <li>Inorder to run this firststart the action server: </li>
+    <pre><span style="color:grey">rasa run actions</span></pre>
+    <li>Run the following command and enjoy :)</li>
+    <pre><span style="color:grey">rasa shell</span></pre>
     </ol>
   </div>
