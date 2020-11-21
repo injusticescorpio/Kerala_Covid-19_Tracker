@@ -6,7 +6,7 @@ Like this
 ![image](https://github.com/injusticescorpio/Kerala_Covid-19_Tracker/blob/master/Screenshot%20(158).png)
 
 <div style="color:grey">
-# Inorder to run this:
+<h2> Inorder to run this: <h2>
   <ul>
     <li>First install Rasa:<b>pip install Rasa</b></li>
     <li></li>
