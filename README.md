@@ -12,7 +12,7 @@ Like this
     <li>First install Rasa</li>
     <pre><span style="color:grey">pip install Rasa</span></pre>
     <li>Download the file</li>
-    <li>Inorder to run this firststart the action server: </li>
+    <li>Inorder to run this, first start the action server: </li>
     <pre><span style="color:grey">rasa run actions</span></pre>
     <li>Run the following command and enjoy :)</li>
     <pre><span style="color:grey">rasa shell</span></pre>
