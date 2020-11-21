@@ -1,0 +1,53 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- thanks
+- want_details
+- total_details
+- district_info
+- ask_covid_19_short
+- ask_covid_19_long
+- stop
+- greet
+- goodbye
+entities:
+- district
+- reply
+slots:
+  district:
+    type: text
+    influence_conversation: true
+  reply:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! How are you and how can i help you Today?
+  utter_district_details:
+  - text: Which district you need the details of
+  utter_showing_details:
+  - text: Okey give me a minute to get the information of {district}
+  utter_ask_again:
+  - text: Would you like to know the today's total count of covid 19 in kerala
+  utter_here_you_go:
+  - text: Here you go with the details..
+  utter_welcome:
+  - text: You are welcome
+  utter_goodbye:
+  - text: Bye
+  utter_ask_short_again:
+  - text: DO u want print total details of kerala
+actions:
+- action_respond_details
+- action_short_show_details
+- action_show_details
+- action_total_details
+- utter_ask_again
+- utter_ask_short_again
+- utter_district_details
+- utter_greet
+- utter_here_you_go
+- utter_showing_details
+- utter_welcome
+version: '2.0'

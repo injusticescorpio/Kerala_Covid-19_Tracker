@@ -1,0 +1,132 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hy
+    - hello arista
+    - hy arista
+    - heylo Arista
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: ask_covid_19_long
+  examples: |
+    - What is the covid 19 status in kerala?
+    - corona in kerala
+    - covid in kerala
+    - covid 19 in kerala
+    - current status of covid in kerala
+    - present status of covid
+    - what is the general status of covid in kerala?
+    - what is the general status of corona in kerala?
+    - kerala covid 19 status
+    - corona corona in kerala
+    - covid status in kerala
+- intent: district_info
+  examples: |
+    - [Alappuzha](district)
+    - [Kasaragod](district)
+    - [Ernakulam](district)
+    - [Malappuram](district)
+    - [Thrissur](district)
+    - [Idukki](district)
+    - [Kottayam](district)
+    - [Pathanamthitta](district)
+    - [Kollam](district)
+    - [Thiruvananthapuram](district)
+    - [Kozhikode](district)
+    - [Palakkad](district)
+    - [Kannur](district)
+    - [Wayanad](district)
+    - [kollam](district)
+    - [alappuzha](district)
+    - [Kollam](district)
+    - [Kottayam](district)
+- intent: ask_covid_19_short
+  examples: |
+    - What is the corona in [alappuzha](district)?
+    - What is the corona in [kasaragod](district)?
+    - What is the corona in [kannur](district)?
+    - What is the corona in [kozhikode](district)?
+    - What is the corona in [wayanad](district)?
+    - What is the corona in [malappuram](district)?
+    - What is the corona in [palakkad](district)?
+    - What is the corona in [thrissur](district)?
+    - What is the corona in [ernakulam](district)?
+    - What is the corona in [idukki](district)?
+    - What is the corona in [kottayam](district)?
+    - What is the corona in [pathanamthitta](district)?
+    - What is the corona in [kollam](district)?
+    - What is the corona in [thiruvananthapuram](district)?
+    - covid 19 in [alappuzha](district)
+    - covid 19 in [kollam](district)
+    - covid 19 in [thrissur](district)
+    - corona in [erakulam](district)
+    - covid 19 in [idukki](district)
+    - covid 19 in [malappuram](district)
+    - covid 19 in [kannur](district)
+    - covid in [kollam](district)
+    - covid in [alappuzha](district)
+    - covid in [idukki](district)
+- intent: total_details
+  examples: |
+    - What is the total covid-19 details in kerala?
+    - What is the total count of corona in kerala?
+    - What is the total number of covid patients in kerala?
+    - total covid 19 counts
+    - todays details of covid in kerala
+    - please tell me the details about covid 19 in kerala
+    - can you tell me the covid details in kerala?
+    - present details of covid in kerala
+    - can you tell me the at present details of covid?
+    - can yo tell me the current details of covid in kerala?
+    - current details of covid in kerala
+    - today counts
+    - today covid19 count
+    - todays covid count
+    - todays covid 19
+    - today's covid 19
+    - today's covid
+- intent: want_details
+  examples: |
+    - [yes](reply)
+    - [ya sure](reply)
+    - [why not](reply)
+    - [yes please](reply)
+    - [yasss](reply)
+    - [no](reply)
+    - [ya](reply)
+    - [yes](reply)
+    - [no](reply)
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - very much thanks
+    - thanking you very much
+    - thankyou thankyou
+    - wow thanks
+    - thnaks

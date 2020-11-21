@@ -1,0 +1,232 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: covid_19_long_details
+  steps:
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+      - district: "Alappuzha"
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+      - reply: "yes"
+  - action: action_total_details
+
+
+- story: covid_19_short_details
+  steps:
+    - intent: ask_covid_19_short
+      entities:
+        - district: "Alappuzha"
+    - action: utter_here_you_go
+    - action: action_short_show_details
+    - action: utter_ask_short_again
+    - intent: want_details
+      entities:
+        - reply: "yes"
+    - action: action_total_details
+
+- story: covid_total
+  steps:
+    - intent: total_details
+    - action: utter_here_you_go
+    - action: action_respond_details
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: total_details
+  - action: utter_here_you_go
+  - action: action_respond_details
+  - intent: ask_covid_19_short
+    entities:
+    - district: kollam
+  - slot_was_set:
+    - district: kollam
+  - action: utter_here_you_go
+  - action: action_short_show_details
+  - action: utter_ask_short_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: alappuzha
+  - slot_was_set:
+    - district: alappuzha
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: total_details
+  - action: utter_here_you_go
+  - action: action_respond_details
+  - intent: ask_covid_19_short
+    entities:
+    - district: alappuzha
+  - slot_was_set:
+    - district: alappuzha
+  - action: utter_here_you_go
+  - action: action_short_show_details
+  - action: utter_ask_short_again
+  - intent: want_details
+    entities:
+    - reply: no
+  - slot_was_set:
+    - reply: no
+  - action: action_total_details
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: Idukki
+  - slot_was_set:
+    - district: Idukki
+  - action: utter_showing_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: Kottayam
+  - slot_was_set:
+    - district: Kottayam
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: ya
+  - slot_was_set:
+    - reply: ya
+  - action: action_total_details
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: Alappuzha
+  - slot_was_set:
+    - district: Alappuzha
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: ask_covid_19_short
+    entities:
+    - district: alappuzha
+  - slot_was_set:
+    - district: alappuzha
+  - action: utter_here_you_go
+  - action: action_short_show_details
+  - action: utter_ask_short_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: total_details
+  - action: utter_here_you_go
+  - action: action_respond_details
+  - intent: stop
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: Kollam
+  - slot_was_set:
+    - district: Kollam
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: thanks
+  - action: utter_welcome
+  - intent: ask_covid_19_short
+    entities:
+    - district: idukki
+  - slot_was_set:
+    - district: idukki
+  - action: utter_here_you_go
+  - action: action_short_show_details
+  - action: utter_ask_short_again
+  - intent: want_details
+    entities:
+    - reply: yes
+  - slot_was_set:
+    - reply: yes
+  - action: action_total_details
+  - intent: total_details
+  - action: utter_here_you_go
+  - action: action_respond_details
+  - intent: ask_covid_19_long
+  - action: utter_district_details
+  - intent: district_info
+    entities:
+    - district: Kottayam
+  - slot_was_set:
+    - district: Kottayam
+  - action: utter_showing_details
+  - action: action_show_details
+  - action: utter_ask_again
+  - intent: want_details
+    entities:
+    - reply: no
+  - slot_was_set:
+    - reply: no
